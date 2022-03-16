@@ -1,3 +1,10 @@
+/*To Do List
+ Ball Collisions
+ Pseudocode other class
+ Configuring the Game - setting initial variables (i.e. paddle speed)
+ Screen Saver Pong or 1-Player Pong: paddle.y=ball.y
+ */
+
 // Global Variables & Objects
 Ball myBall, yourBall; 
 //
@@ -19,9 +26,15 @@ void draw()
 {
   myBall.draw();
   yourBall.draw(); //Notice Bug
+  //
+  //myBall.detectCollision(Paddle.x); // Example: Classes Talking
+  //
+  ballCollisions(); //Student Problem
 }//End draw()
 //
 void keyPressed() {
+  //Press W-S-D for Left Paddle
+  //Press UP-DOWN-LEFT Arroes for Right Paddle
 }//End keyPressed()
 //
 void mousePressed() {
