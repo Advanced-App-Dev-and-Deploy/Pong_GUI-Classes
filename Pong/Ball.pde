@@ -7,6 +7,13 @@
    - Note: continuous collision, so the ball can't zip through the paddle
  Ball become invisible for a split second-guessing
    - invisible halfway across the screen ... guess the path
+   
+ Behaviours of a Ball
+ - start in any direction
+ - start at any speed
+ - have a nightMode and a day-time random colour
+ - knows to bounce of paddle
+ - knows when it has scored
  */
 class Ball
 {

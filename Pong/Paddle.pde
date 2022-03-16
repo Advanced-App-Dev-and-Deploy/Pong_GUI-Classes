@@ -3,6 +3,11 @@
  Make the paddle smaller with more points
  [Advanced Option] 360 degrees full rotation for the ball/paddles
  [Advanced Option] Curved Paddle, deflects and different angles
+ 
+ Behaviours of Paddles
+ - Paddle stays on the screen
+ - Paddle will flash for fraction of second when (FOR with delay built in)
+ - 
  */
 
 class Paddle {
