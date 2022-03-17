@@ -4,3 +4,10 @@ Creating a Working Copy of an Object Orientated Pong Game (Visual Objects match 
 Note: see comments in Pong for ideas and Pseudocode
 
 ---
+
+# To Include 
+
+Modifiers
+- Public and Private
+
+---
