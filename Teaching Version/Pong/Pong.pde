@@ -52,6 +52,7 @@ void draw() {
     for (int y=i-1; y<ballCounter; y++) {
       if (i>0 && y>0) {
         if (balls[i].ballXGetter()>(width*0)+2*balls[i].ballDiameterGetter() && balls[i].ballXGetter()<width-2*balls[i].ballDiameterGetter()) {
+          //Need to ensure both y-values are close enough to test the x-values
           // Ball Objects bounce off each other
           // Specific instant variables must be compared in main program, classes use conceptual behaviour of X & Y
           //For more than one ball, need to compare all objects even if scored
@@ -61,6 +62,7 @@ void draw() {
           // Note: will break if myBall scores before yourBall;
           if (collisionProximityX>0 && collisionProximityX<balls[i].ballDiameterGetter()) {
             balls[i].ballSpeedXSetter();
+            println("here");
           }
         }
       }
