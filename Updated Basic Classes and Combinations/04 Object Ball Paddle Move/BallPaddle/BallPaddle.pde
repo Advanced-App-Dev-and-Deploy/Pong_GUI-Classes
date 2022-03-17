@@ -30,6 +30,7 @@ void draw() {
   background(255);
   for ( int i = 0; i<ballCounter; i++ ) { //Controls each ball
     balls[i].draw(); //Variables and Contructor
+    balls[i].directionYSetter(paddle.paddleXLeftGetter(), paddle.paddleYLeftGetter(), paddle.paddleXRightGetter(), paddle.paddleYRightGetter(), paddle.paddleWidthGetter(), paddle.paddleHeightGetter());
   }
   paddle.draw();
 }//End draw()

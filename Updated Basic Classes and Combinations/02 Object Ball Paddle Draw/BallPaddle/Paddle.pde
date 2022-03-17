@@ -18,7 +18,8 @@ private class Paddle {
     this.downLeft = false;
     this.upRight = false;
     this.downRight = false;
-    this.yMove = int( (heightParameter / heightParameter) * 5);
+    int paddleSpeed = 5; //Previously a User initiated value
+    this.yMove = int( (heightParameter / heightParameter) * paddleSpeed);
   }//End Constructor
   //
   void draw() {
@@ -36,75 +37,14 @@ private class Paddle {
     // Bouncing off Right Paddle
     //
     // Moving Left Paddle
-    // 
-    if ( upLeft == true && downLeft == false) {
-      paddleYLeft -= yMove;
-      stopLeft = false;
-    }
-    if (upLeft == false && downLeft == true) {
-      paddleYLeft += yMove;
-      stopLeft = false;
-    }
-    if ( stopLeft== true ) {
-      upLeft = false;
-      downLeft = false;
-    }
     //
     // Moving Right Paddle
-    if ( upRight == true && downRight == false) {
-      paddleYRight -= yMove;
-      stopRight = false;
-    }
-    if (upRight == false && downRight == true) {
-      paddleYRight += yMove;
-      stopRight = false;
-    }
-    if ( stopRight== true ) {
-      upRight = false;
-      downRight = false;
-    }
     //
     // Redrawing Paddle if too High
-    if ( paddleYLeft < height * 0) paddleYLeft = 0;
-    if (paddleYLeft  > height - paddleHeight ) paddleYLeft = height - paddleHeight;
     //
     // Redrawing Paddle if too Low
-    if ( paddleYRight < height * 0) paddleYRight = 0;
-    if (paddleYRight > height - paddleHeight ) paddleYRight = height - paddleHeight;
     //
   }//End gamePlay
   //
   // Getters and Setters
-  void generalReset() {
-    upLeft = false;
-    downLeft = false;
-    stopLeft = false;
-    upRight = false;
-    downRight = false;
-    stopRight = false;
-  } 
-  void upLeftGetter() { //Get Keyboard input
-    generalReset();
-    upLeft = true;
-  }
-  void downLeftGetter() { //Get Keyboard input
-    generalReset();
-    downLeft = true;
-  }
-  void stopLeftGetter() { //Get Keyboard input
-    generalReset();
-    stopLeft = true;
-  }
-  void upRightGetter() { //Get Keyboard input
-    generalReset();
-    upRight = true;
-  }
-  void downRightGetter() { //Get Keyboard input
-    generalReset();
-    downRight = true;
-  }
-  void stopRightGetter() { //Get Keyboard input
-    generalReset();
-    stopRight = true;
-  }
 }//End Ball
