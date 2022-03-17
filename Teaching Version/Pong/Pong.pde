@@ -18,6 +18,7 @@ int ballCounter = balls.length - balls.length; // How to get "Zero but use anoth
 Paddle paddle;
 Boolean[] leftScoreOff = new Boolean [balls.length]; //links to score so code is skipped if ball is used once
 Boolean[] rightScoreOff = new Boolean [balls.length]; //links to score so code is skipped if ball is used once
+float collisionProximityX; //For Ball Collisions
 //
 void setup() {
   size (600, 500); //fullScreen(), displayWidth, displayHeight;
@@ -47,6 +48,22 @@ void draw() {
     if ( balls[i].ballRightGoalGetter() == true && rightScoreOff[i] == false) {
       paddle.rightScoreSetter();
       rightScoreOff[i] = true;
+    }
+    for (int y=i-1; y<ballCounter; y++) {
+      if (i>0 && y>0) {
+        if (balls[i].ballXGetter()>(width*0)+2*balls[i].ballDiameterGetter() && balls[i].ballXGetter()<width-2*balls[i].ballDiameterGetter()) {
+          // Ball Objects bounce off each other
+          // Specific instant variables must be compared in main program, classes use conceptual behaviour of X & Y
+          //For more than one ball, need to compare all objects even if scored
+          collisionProximityX = abs (balls[i].ballXGetter() - balls[y].ballXGetter()); //Acceptable values will be +-, compare only +
+          //float collisionProximityY = abs (myBall.y - yourBall.y); //Y-Variable equibalent
+          // Note: this will not include all cases about the physics of when two ball objects collide
+          // Note: will break if myBall scores before yourBall;
+          if (collisionProximityX>0 && collisionProximityX<balls[i].ballDiameterGetter()) {
+            balls[i].ballSpeedXSetter();
+          }
+        }
+      }
     }
   }
   paddle.draw();

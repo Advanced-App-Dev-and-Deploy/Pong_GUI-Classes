@@ -113,5 +113,8 @@ private class Ball {
     //Simlified Further by &&, single conditional
     //Note: Prototype with if's, then simply conditional
   }//End directionYSetter
+  void ballSpeedXSetter() {
+    ballSpeedX *= -1;
+  }
   //
 }//End Ball
