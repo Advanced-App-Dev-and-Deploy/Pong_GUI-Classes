@@ -8,6 +8,6 @@ Note: see comments in Pong for ideas and Pseudocode
 # To Include 
 
 Modifiers
-- Public and Private
+- Public, Private, this
 
 ---
