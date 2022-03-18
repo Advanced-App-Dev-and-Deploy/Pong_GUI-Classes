@@ -45,6 +45,5 @@ void mousePressed() {
   }
   for ( int i = ballCounter-1; i<ballCounter; i++ ) { //Constructor for other balls should not be run
     balls[i] = new Ball(width, height); 
-    balls[i].draw(); //Completes Constructor, teaching opportunity
   }
 }//End mousePressed

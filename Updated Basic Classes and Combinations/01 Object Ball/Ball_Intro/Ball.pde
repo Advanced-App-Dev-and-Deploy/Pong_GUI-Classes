@@ -7,11 +7,11 @@ private class Ball {
   private int scorePlayer1, scorePlayer2;
   private Boolean ballXGoal;
   //
-  //int ballCount = 5; //requires pure java class for true static varaibles (does not need instantiated object)
+  //int ballCount = 10; //requires pure java class for true static varaibles (does not need instantiated object)
   //needs to be coded first in Processing
   //
   //Constructor, populates the variables
-  public Ball(float widthParameter, float heightParameter) { //Passsing Geometry
+  private Ball(float widthParameter, float heightParameter) { //Passsing Geometry
     ballStartX = int(widthParameter/2); //will begin as one varaible, but might change b/c easter egg
     ballStartY = int(heightParameter/2); //see above
     this.ballX = ballStartX; //ALways starts in middle
@@ -40,7 +40,7 @@ private class Ball {
     }//End WHILE
   }//End Constructor
   //
-  public void draw() {
+  private void draw() {
     ballDraw();
     gamePlay();
   }//End draw
