@@ -1,2 +1,3 @@
 
-Ball Collisions need to be searched on the Y-axis to ensure they are close enough to be a x-axis subtraction
+Ball Collisions are based on 2x y diameter
+If within 1 x diameter, then collide
