@@ -5,9 +5,11 @@ Note: see comments in Pong for ideas and Pseudocode
 
 ---
 
-# To Include 
+# To Include
 
 Modifiers
 - Public, Private, this
+
+This code need updating a little bit.
 
 ---
