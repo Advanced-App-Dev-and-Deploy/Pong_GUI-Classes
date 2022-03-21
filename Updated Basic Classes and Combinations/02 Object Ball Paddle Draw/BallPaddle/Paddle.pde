@@ -7,10 +7,11 @@ private class Paddle {
 
   //Constructor, populates the variables
   public Paddle (float widthParameter, float heightParameter) { //Passsing Geometry
+    //Remember about night mode, no blue colour or increasing contrast or decreasing contrast
     this.colour = color (int(random(100, 255)), int(random(50, 255)), int(random(175, 255)));
-    paddleWidth = int(heightParameter*1/80); //no "this" thus no change ever
+    paddleWidth = int(widthParameter*1/80); //no "this" thus no change ever
     paddleXRight = int(widthParameter*39/40) - paddleWidth;
-    paddleXLeft = int(heightParameter*1/40);
+    paddleXLeft = int(widthParameter*1/40);
     paddleHeight = int(heightParameter*1/4);
     this.paddleYLeft = int(heightParameter*1/2) - paddleHeight*1/2;
     this.paddleYRight = paddleYLeft; 
