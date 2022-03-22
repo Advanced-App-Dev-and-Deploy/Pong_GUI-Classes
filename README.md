@@ -12,4 +12,6 @@ Modifiers
 
 This code need updating a little bit.
 
+Algorithms, including sequencing codes
+
 ---
