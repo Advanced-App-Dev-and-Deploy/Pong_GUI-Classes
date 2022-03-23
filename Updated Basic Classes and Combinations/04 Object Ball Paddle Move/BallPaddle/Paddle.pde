@@ -35,7 +35,7 @@ private class Paddle {
   //
   void gamePlay() {
     // Moving Left Paddle
-    if ( upLeft == true && downLeft == false) {
+    if ( upLeft == true && downLeft == false ) {
       paddleYLeft -= yMove;
       stopLeft = false;
     }
