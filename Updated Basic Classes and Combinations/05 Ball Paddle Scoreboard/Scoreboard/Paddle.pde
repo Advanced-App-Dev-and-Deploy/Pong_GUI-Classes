@@ -80,8 +80,8 @@ private class Paddle {
     fill(colour); 
     textSize(textSize);
     textAlign (CENTER, CENTER);
-    text(Integer.toString(leftScore), leftBoardX, leftBoardY, boardSide, boardSide);
-    text(Integer.toString(rightScore), rightBoardX, rightBoardY, boardSide, boardSide);
+    text(Integer.toString(leftScore), leftBoardX, leftBoardY, boardSide, boardSide); // Better with Text Calculator
+    text(Integer.toString(rightScore), rightBoardX, rightBoardY, boardSide, boardSide); //Better with Text Calculator
   }//End gamePlay
   //
   // Getters and Setters

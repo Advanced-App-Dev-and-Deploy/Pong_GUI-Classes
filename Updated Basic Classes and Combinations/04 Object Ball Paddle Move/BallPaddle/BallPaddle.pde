@@ -31,6 +31,7 @@ void draw() {
   for ( int i = 0; i<ballCounter; i++ ) { //Controls each ball
     balls[i].draw(); //Variables and Contructor
     balls[i].directionYSetter(paddle.paddleXLeftGetter(), paddle.paddleYLeftGetter(), paddle.paddleXRightGetter(), paddle.paddleYRightGetter(), paddle.paddleWidthGetter(), paddle.paddleHeightGetter());
+    //Ball knows when to bounce
   }
   paddle.draw();
 }//End draw()
@@ -54,6 +55,5 @@ void mousePressed() {
   }
   for ( int i = ballCounter-1; i<ballCounter; i++ ) { //Constructor for other balls should not be run
     balls[i] = new Ball(width, height); 
-    balls[i].draw(); //Completes Constructor, teaching opportunity
   }
 }//End mousePressed

@@ -11,7 +11,7 @@ private class Paddle {
     paddleWidth = int(heightParameter*1/80); //no "this" thus no change ever
     paddleXRight = int(widthParameter*39/40) - paddleWidth;
     paddleXLeft = int(heightParameter*1/40);
-    paddleHeight = int(heightParameter*1/4);
+    paddleHeight = int(heightParameter*4/5);
     this.paddleYLeft = int(heightParameter*1/2) - paddleHeight*1/2;
     this.paddleYRight = paddleYLeft; 
     this.upLeft = false;
