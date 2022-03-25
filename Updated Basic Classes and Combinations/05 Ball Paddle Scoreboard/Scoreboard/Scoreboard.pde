@@ -21,11 +21,11 @@ void draw() {
   for ( int i = 0; i<ballCounter; i++ ) {
     balls[i].draw();
     balls[i].directionYSetter(paddle.paddleXLeftGetter(), paddle.paddleYLeftGetter(), paddle.paddleXRightGetter(), paddle.paddleYRightGetter(), paddle.paddleWidthGetter(), paddle.paddleHeightGetter());
-    if ( balls[i].ballLeftGoalGetter() == true && leftScoreOff[i] == false) {
+    if ( balls[i].ballLeftGoalGetter() == true && leftScoreOff[i] == false ) {
       paddle.leftScoreSetter();
       leftScoreOff[i] = true;
     }
-    if ( balls[i].ballRightGoalGetter() == true && rightScoreOff[i] == false) {
+    if ( balls[i].ballRightGoalGetter() == true && rightScoreOff[i] == false ) {
       paddle.rightScoreSetter();
       rightScoreOff[i] = true;
     }

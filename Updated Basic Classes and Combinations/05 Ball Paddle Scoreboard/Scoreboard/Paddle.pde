@@ -31,7 +31,7 @@ private class Paddle {
     leftBoardY = heightParameter*0;
     rightBoardX = paddleXRight-boardSide;
     rightBoardY = leftBoardY;
-    textSize = width*1/15;
+    textSize = width*1/15; //Text Calculator would be better here
   }//End Constructor
   //
   void draw() {
@@ -76,11 +76,11 @@ private class Paddle {
     if ( paddleYRight < height * 0) paddleYRight = 0;
     if (paddleYRight > height - paddleHeight ) paddleYRight = height - paddleHeight;
     //
-    fill(white);
+    //fill(white); remant of rect()
     fill(colour); 
     textSize(textSize);
     textAlign (CENTER, CENTER);
-    text(Integer.toString(leftScore), leftBoardX, leftBoardY, boardSide, boardSide); // Better with Text Calculator
+    text(Integer.toString(leftScore), leftBoardX, leftBoardY, boardSide, boardSide); //Better with Text Calculator
     text(Integer.toString(rightScore), rightBoardX, rightBoardY, boardSide, boardSide); //Better with Text Calculator
   }//End gamePlay
   //
