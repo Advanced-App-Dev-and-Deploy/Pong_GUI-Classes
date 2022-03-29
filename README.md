@@ -1,6 +1,8 @@
 # Pong_GUI-Classes
 Creating a Working Copy of an Object Orientated Pong Game (Visual Objects match class-based objects)
 
+**REMEMBER**: Pong is origonally a training program to learn how to code 
+
 Note: see comments in Pong for ideas and Pseudocode
 
 Teaching Version with fully included notes: https://github.com/Advanced-App-Dev-and-Deploy/Pong_GUI-Classes-_TeachingVersion
