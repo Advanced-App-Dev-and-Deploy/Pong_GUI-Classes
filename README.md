@@ -1,7 +1,7 @@
 # Pong_GUI-Classes
 Creating a Working Copy of an Object Orientated Pong Game (Visual Objects match class-based objects)
 
-**REMEMBER**: Pong is origonally a training program to learn how to code 
+**REMEMBER**: Pong is origonally a training program to learn how to code
 
 Note: see comments in Pong for ideas and Pseudocode
 
@@ -81,5 +81,54 @@ Additional Pong Algorithms
 - Scoreboard is part of Paddle class to introduce concepts of abstract classes: scoreboard is rect(), paddle is also rect()
   - Demonstrated Scoreboard Algorithm uses
     - 2 Booleans to control score increase between two classes and associated variables
+
+---
+
+# To Include
+
+Vocabulary
+- Accessor Method or "getter"
+- Algorithm: steps to solve problem, knows when to stop
+- ArithmeticException: runtime error, division by zero
+- Arithmetic Operator
+- ArrayIndexOutOfBoundsException: runtime error
+- Assertion: debugging statement, what a program is supposed to be doing on a particular line of code (related to print() & println() )
+- Average Case of an Algorithm: middle point between best case and worst case of an algorithm
+- Behaviours of an Object: methods or procedures of a class
+- Bottom Up Program Development: prototyping smaller and simpler algorithms and solutions
+- Top Down Program Development: prototyping from summary (i.e. GUI paper summary)
+- Casting: changing variable declaration adjusting memory size or variable type to affect data
+- Class: instance variables & behaviours
+- Client Program for a Class: outside program accessing class's public methods, i.e. scanner class reading data from keyboard (i.e. void keyPressed(){} )
+- Compile-time error: i.e. invoking variable that doesn't exist, invoking method object doesn't have access to, incorrect function parameter, etc.
+- Composition Relationship: "has-a" relationship, instance variable from one class is a type in another class
+- Compound Assignment Operator: compact syntax for arithmetic operator ( +, ++, +=)
+- Constructor: same name as class, can be overloaded
+- Decrement Operator: --
+- Driver Class: contains MAIN Method used to test a program in development, thus each class can be fully tested before incorporated as an object in a new class
+- Encapsulation: combining data and behaviours (variables and methods) by using private, getters, and setters into a single class
+- Enhanced FOR Loop, for-each: iterates through all elements of a collection
+- Escape Sequence (character escape): formating output in print() and println()
+- Exception: runtime error thrown during normal operation and caught by Try-Catch or IF
+- FINAL Variable: constant once assigned
+- Floating Point Division: at least one variable is a float or double (caution (double)(3/4) returns zero by integer division)
+- Formal Parameters: local variables of incoming data
+- IllegalArgumentException: runtime error, screens for "bad" input to a method and is thrown to prevent processing "bad" data
+- Immutable Object: contains no mutator methods (i.e. STRING is immutable but can always create a new String based on mutated existing String)
+- Increment Operator: ++
+- ArrayIndexOutOfBoundsException: runtime error, out of range index for collection (array, array list, string)
+- Information hiding: using private to restrict instance variables and methods from client classes
+- Inheritance:
+
+- NullPointerException: variable is NULL but program is expecting a value
+
+
+Note: other vocabulary not yet placed
+
+Other Vocabulary
+- JAVADOC
+- @param
+- @return
+- base case (recursive method): causes algorithm to end
 
 ---
